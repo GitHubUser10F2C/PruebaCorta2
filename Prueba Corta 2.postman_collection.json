@@ -1,0 +1,162 @@
+{
+	"info": {
+		"_postman_id": "b4394e1f-425e-4a0b-b2d1-7fac5a5f5b27",
+		"name": "Prueba Corta 2",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "21652857"
+	},
+	"item": [
+		{
+			"name": "Create Chair",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"nombre\": \"silla2\",\r\n    \"tipo\": \"comedor\",\r\n    \"material\": \"aluminio\",\r\n    \"color\" : \"azul\",\r\n    \"altura\" : 2,\r\n    \"anchura\" : 2,\r\n    \"profundidad\": 45,\r\n    \"precio\": 29990,\r\n    \"stock\": 100\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5275/api/chair",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5275",
+					"path": [
+						"api",
+						"chair"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Chairs",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:5275/api/chair",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5275",
+					"path": [
+						"api",
+						"chair"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Chair",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:5275/api/chair/silla2",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5275",
+					"path": [
+						"api",
+						"chair",
+						"silla2"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update Chair",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"nombre\": \"silla2\",\r\n    \"tipo\": \"comedor\",\r\n    \"material\": \"aluminio\",\r\n    \"color\" : \"azul\",\r\n    \"altura\" : 2,\r\n    \"anchura\" : 2,\r\n    \"profundidad\": 45,\r\n    \"precio\": 5000\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5275/api/chair/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5275",
+					"path": [
+						"api",
+						"chair",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update Chair Stock",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5275/api/chair/1/30",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5275",
+					"path": [
+						"api",
+						"chair",
+						"1",
+						"30"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete Chair",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:5275/api/chair/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5275",
+					"path": [
+						"api",
+						"chair",
+						"1"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
